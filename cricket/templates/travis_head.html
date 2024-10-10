@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Head !!!</title>
+    {% load static %}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px 120px;
+            word-spacing: 1.5mm;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+
+        h3 {
+            color: black;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h3::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(231, 44, 44);
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            box-shadow: 5px 5px 5px 0px #747373;
+        }
+
+        .pic {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border: 2px solid;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: rgb(175, 18, 18);
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid black;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            p, li {
+                font-size: 0.9rem;
+            }
+
+            .logo, .pic {
+                width: 90%;
+            }
+
+            table {
+                border: 0;
+            }
+
+            th, td {
+                padding: 6px;
+                display: block;
+                text-align: left;
+                border: 0;
+            }
+
+            th {
+                background-color: transparent;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h3 {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            p, li {
+                font-size: 0.8rem;
+            }
+
+            .logo, .pic {
+                width: 100%;
+            }
+
+            table {
+                border: 0;
+            }
+
+            th, td {
+                padding: 4px;
+                display: block;
+                text-align: left;
+                border: 0;
+            }
+            
+            th {
+                background-color: transparent;
+            }
+    }
+    </style>
+</head>
+<body>
+    <h3>TRAVIS HEAD PERFORMANCE ANALYSIS IN IPL 2024!</h3>
+    
+    <img src="{% static 'img/travis head.jpg' %}" class="logo" alt="Travis Head">
+    
+    <h2>INTRODUCTION</h2>
+    <p>Travis Head revolutionized T20 cricket during IPL 2024 with a phenomenal performance. Scoring a massive 567 runs in 15 games at a staggering strike rate of 191.55, he was a key factor in leading Sunrisers Hyderabad (SRH) to the ﬁnals. However, in the latter half of the tournament, his performance faltered, exposing certain weaknesses in his game. Despite his initial brilliance, these vulnerabilities suggest that Travis Head might not be as threatening a player in the World Cup 2024.</p><br>
+    
+    <h3>Evaluating Travis Head's performance using Skewness and Kurtosis:</h3>
+    <p>Kurtosis and skewness are key metrics in descriptive statistics, providing insights into the distribution of data. Applying these to Travis Head's IPL 2024 performance reveals intriguing aspects of his batting.</p>
+    
+    <table>
+        <tr>
+            <th>Statistic</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Kurtosis</td>
+            <td>-0.928066336</td>
+        </tr>
+        <tr>
+            <td>Standard Deviation</td>
+            <td>35.268764</td>
+        </tr>
+        <tr>
+            <td>Skewness</td>
+            <td>0.5967497058</td>
+        </tr>
+        <tr>
+            <td>Average</td>
+            <td>37.8</td>
+        </tr>
+    </table>
+
+    <p>Overall, Travis Head's performance in IPL 2024 demonstrates consistency, punctuated by occasional high scores that elevate his average. The slight positive skewness highlights his ability to produce match-winning innings, while the near-normal kurtosis underscores a stable and reliable batting performance. This combination was pivotal in propelling Sunrisers Hyderabad to the ﬁnals, even though he faced challenges in maintaining this high level of performance throughout the entire tournament.</p>
+    <p><strong>Vulnerabilities in Travis Head's Approach:</strong></p>
+
+    <img src="{% static 'img/travis 1.jpeg' %}" class="pic" alt="Ducks and Ones chart">
+    <p>Examining the data on top players who were dismissed for less than one run in their respective seasons, Travis Head stands out, having fallen for a duck and one run four times. This frequent inability to score even a single run is a notable weakness, particularly when compared to other leading players.</p>
+
+    <img src="{% static 'img/travis 2.jpeg' %}" class="pic" alt="Out before second over chart">
+    <p>Travis Head has been dismissed before the second over ﬁve times in 15 matches. This is a stark contrast to other successful high-scoring openers, who typically show more resilience early in their innings. This pattern of early dismissals highlights a signiﬁcant weakness in Head's performance.</p>
+    <p><strong>Travis Head's Weakness Analysis:</strong></p>
+
+    <img src="{% static 'img/travis 3.png' %}" class="pic" alt="Weakness chart">
+    <p>In this analysis, we delve into the ﬁrst two overs of two crucial matches—one where he performed exceptionally well and another where he struggled.</p>
+    
+    <p><strong>The Pitch Map:</strong></p>
+    <p>The pitch map reveals valuable insights. Red dots mark wicket deliveries, and the line and length of the deliveries play a pivotal role. Let’s break it down.</p>
+
+    <p><strong>Low-Scoring Match:</strong></p>
+    <p>In the high-scoring encounter, Head faced a challenging line and length—full deliveries moving towards the off side. Unfortunately, he found it diﬃcult to tackle this combination, resulting in his downfall. Mitchell Starc and Arshdeep troubles him while bowling fuller and moves towards outside off.</p>
+    <img src="{% static 'img/travis 4.jpeg' %}" class="pic" alt="Against Starc chart">
+    <img src="{% static 'img/travis 5.jpeg' %}" class="pic" alt="Against Arshdeep chart">
+
+    <p><strong>High-Scoring Match:</strong></p>
+    <p>Against LSG Krishnappa Gowtham, Head encountered a different scenario. Gowtham primarily bowled on the leg side, with two purple dots and one green dot in the ﬁrst over. This approach seemed too straightforward for any seasoned batsman. However, Head’s struggle came when facing shorter balls. Lalit Yadav, another bowler managed to hit him for two sixes initially. But Yadav adapted swiftly, adjusting his line and length to a good area—stump line. Khaleel Ahmad and Reece Topley, both bowlers known for their shorter deliveries, faced Head’s wrath. He attacked them aggressively in the mid-wicket region, showcasing his prowess.</p>
+    <img src="{% static 'img/travis 6.png' %}" class="pic" alt="attack chart">
+
+    <p>The above pitch map shows Travis Head’s side of attack on each delivery. In the Offside region, he waits for the ball to sit up to hit over point. Even when faced with shorter and wider balls, Head consistently targets the mid-wicket area.</p>
+
+    <p><strong>Ups and Lows in Travis Head innings:</strong></p>
+    <img src="{% static 'img/travis.jpeg' %}" class="pic" alt="up-low chart">
+
+    <h2>CONCLUSION</h2>
+    <p>In the later part of the tournament, opponent bowlers recognized these patterns and avoided shorter and wider deliveries. They also focused on going fuller outside off. This strategic adjustment was effective against Travis Head during the IPL. Now, let’s hope that international bowlers adopt similar tactics and ﬁnd success against him in the World Cup 2024.</p>
+
+</body>
+</html>

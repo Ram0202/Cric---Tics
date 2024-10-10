@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;            
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgb(23, 196, 124);
+        }
+
+        h5 {
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+
+        main {
+            margin-top: 25px;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        footer {
+            width: 100%;
+            font-size: 17px;
+            font-weight: bold;
+            display: flex;
+            background-color: rgb(23, 196, 124);
+            padding: 18px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo {
+                max-width: 150px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h5>Cric - Tics</h5>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        Copyright © Cric - Tics. All rights reserved 2024.
+    </footer>
+</body>
+</html>

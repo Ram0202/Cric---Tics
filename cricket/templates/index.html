@@ -1,0 +1,119 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+
+<title>Cric - Tics Home Page</title>
+<style>
+body {
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+.hi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    transition: background 0.4s, transform 0.2s;
+}
+
+.hi img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.hi a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.1s;
+}
+
+.hi span {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.hi:hover {
+    background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.hi:hover a {
+    color: white;
+    font-weight: bold;
+}
+
+.hi:hover img {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+    .hi {
+        width: calc(50% - 20px);
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hi {
+        width: calc(100% - 20px);
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hi {
+        width: calc(100% - 20px);
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .hi span {
+        font-size: 14px;
+    }
+}
+</style>
+
+<div class="container">
+    <div class="hi">
+        <a href="/sandeep_sharma">
+            <img src="{% static 'img/sandeep sharma.jpg' %}" alt="Sandeep Sharma Image">
+            <span>Is Sandeep Sharma better than Bhuvneshwar Kumar, Jasprit Bumrah, and Mohammed Shami ?</span>
+        </a>
+    </div>
+    <div class="hi">
+        <a href="/amit_mishra">
+            <img src="{% static 'img/amit mishra.jpg' %}" alt="Amit Mishra Image">
+            <span>Amit Mishra - A Forgotten Leggie ...</span>
+        </a>
+    </div>
+    <div class="hi">
+        <a href="/travis_head">
+            <img src="{% static 'img/travis head.jpg' %}" alt="Travis Head Image">
+            <span>Travis Head performance analysis in IPL 2024 !</span>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
